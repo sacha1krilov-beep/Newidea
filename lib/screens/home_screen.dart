@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../data/exercises.dart';
 import '../models/exercise.dart';
 import 'exercise_detail_screen.dart';
+import 'package:provider/provider.dart';
+import '../providers/theme_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -58,6 +60,14 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     return Scaffold(
       appBar: AppBar(
         title: const Text('GymFit Routines'),
+        actions: [
+          Consumer<ThemeProvider>(
+            builder: (context, theme, _) => IconButton(
+              icon: Icon(theme.isDark ? Icons.wb_sunny : Icons.nights_stay),
+              onPressed: () => theme.toggleTheme(),
+            ),
+          ),
+        ],
         bottom: TabBar(
           controller: _tabController,
           tabs: const [
