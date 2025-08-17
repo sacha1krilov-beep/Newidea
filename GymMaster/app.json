@@ -27,13 +27,19 @@
       "permissions": [
         "VIBRATE",
         "WAKE_LOCK"
-      ]
+      ],
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-linear-gradient"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
   }
 }
