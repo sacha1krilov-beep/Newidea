@@ -1,0 +1,32 @@
+name: gym_fit
+version: 1.0.0+1
+description: A gym workout companion app with routines for beginners, intermediates, and professionals.
+
+publish_to: 'none'
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+# Dependencies
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # State management & UI helpers
+  provider: ^6.0.5
+  # (Optional) For fancy tab animations
+  flutter_staggered_animations: ^1.1.1
+
+# Development dependencies
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# Flutter-specific configuration
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
