@@ -46,6 +46,20 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       icon: 'timer-outline',
       color: ['#96CEB4', '#A8D5BA'],
       screen: 'Timer'
+    },
+    {
+      title: 'Питание',
+      description: 'Калькулятор калорий и макронутриентов',
+      icon: 'nutrition-outline',
+      color: ['#FFA726', '#FFB74D'],
+      screen: 'Nutrition'
+    },
+    {
+      title: 'Профиль',
+      description: 'Настройки и личные данные',
+      icon: 'person-outline',
+      color: ['#9C27B0', '#BA68C8'],
+      screen: 'Profile'
     }
   ];
 
@@ -98,8 +112,8 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
               <Text style={styles.statLabel}>Программ</Text>
             </View>
             <View style={styles.statItem}>
-              <Text style={styles.statNumber}>3</Text>
-              <Text style={styles.statLabel}>Уровня</Text>
+              <Text style={styles.statNumber}>6</Text>
+              <Text style={styles.statLabel}>Разделов</Text>
             </View>
           </View>
         </View>
